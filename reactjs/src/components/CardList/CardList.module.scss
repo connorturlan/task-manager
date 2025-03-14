@@ -1,0 +1,69 @@
+.CardList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  background-color: lighten(#222, 5%);
+
+  padding: 16px;
+  padding-top: 8px;
+  border-radius: 16px;
+
+  min-width: 12rem;
+  max-width: 12rem;
+
+  &Title {
+    position: sticky;
+    top: 0;
+  }
+
+  &_DragHover {
+    outline: 2px solid white;
+  }
+}
+
+.Card {
+  display: flex;
+  flex-direction: column;
+
+  background-color: lighten(#222, 10%);
+
+  padding: 8px 16px;
+  border-radius: 8px;
+
+  user-select: none;
+  text-wrap: ellipsis;
+  overflow-x: hidden;
+
+  word-break: break-all;
+}
+
+.CardModal {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1em;
+  align-items: center;
+
+  background-color: lighten(#222, 10%);
+
+  padding: 8px 16px;
+  border-radius: 8px;
+
+  user-select: none;
+
+  &_Blackout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #0008;
+
+    z-index: 50;
+  }
+}

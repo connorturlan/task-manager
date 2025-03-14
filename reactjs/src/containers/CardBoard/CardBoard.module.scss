@@ -1,0 +1,12 @@
+.CardBoard {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  min-height: 100%;
+}
+
+.CardBoardContainer {
+  padding: 16px;
+
+  overflow-y: auto;
+}
